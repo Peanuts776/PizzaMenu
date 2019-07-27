@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Melanie's Pizzeria</title>
+		<link rel="stylesheet" href="./css/PizzaMenu.css">
+	</head>
+	
+	<body id="body">
+		<div id="receipt">
+			<h3>RECEIPT</h3>
+				<table>
+					<tr id="headerRow">
+						<th class="column1">Selections</th>
+						<th class="column2">Price</th>
+					</tr>
+					<tr>
+						<td class="column1" id="selectedSize">Size</td>
+						<td class="column2" id="basePrice">Price</td>
+					</tr>
+					<tr>
+						<td class="column1" id="selectedMeats">Meats</td>
+						<td class="column2" id="meatPrice">Price</td>
+					</tr>
+					<tr>
+						<td class="column1" id="selectedCheese">Cheese</td>
+						<td class="column2" id="cheesePrice">Price</td>
+					</tr>
+					<tr>
+						<td class="column1" id="selectedCrust">Crust</td>
+						<td class="column2" id="crustPrice">Price</td>
+					</tr>
+					<tr>
+						<td class="column1" id="selectedSauce">Sauce</td>
+						<td class="column2" id="saucePrice">Price</td>
+					</tr>
+					<tr>
+						<td class="column1" id="selectedVeggies">Veggies</td>
+						<td class="column2" id="veggiePrice">Price</td>
+					</tr>
+					<tr>
+						<td class="column1"><strong>Total Price</strong></td>
+						<td class="column2" id="totalPrice"><strong>Total Price</strong></td>
+					</tr>			
+				</table>
+				<div id="closeButton">
+					<br>
+					<button type="button" onclick="closeWindow()">CLOSE
+					</button>
+				</div>
+			</div>
+		<h1>Melanie's Pizzeria</h1>
+		
+		<div id="menu-container">			
+			<div id="banner">
+					<img src="Images/pizzabanner.jpg" alt ="Pizza Banner">
+			</div>
+			<h2>Our Menu</h2>
+			<form>
+				<div class="menu">
+						<h2>Size</h2>
+						<input type="radio" name="size" value="Personal">Personal &#40$6&#41
+						<input type="radio" name="size" value="Medium">Medium &#40$10&#41
+						<input type="radio" name="size" value="Large">Large &#40$14&#41
+						<input type="radio" name="size" value="Extra Large">Extra Large &#40$16&#41			
+				</div>				
+				<div class="menu">
+						<h2>Meats</h2>
+						<p>First meat is complimentary; $1.00 extra charge for each additional meat</p>
+						<input type="checkbox" name="meat"value="Pepperoni">Pepperoni
+						<input type="checkbox" name="meat" value="Sausage">Sausage
+						<input type="checkbox" name="meat" value="Canadian Bacon">Canadian Bacon
+						<input type="checkbox" name="meat" value="Chicken">Chicken
+						<input type="checkbox" name="meat" value="Anchovy">Anchovy					
+				</div>
+				<div class="menu">
+						<h2>Cheese</h2>
+						<input type="radio" name="cheese" value="None">No Cheese
+						<input type="radio" name="cheese" value="Regular Cheese">Regular Cheese
+						<input type="radio" name="cheese" value="Extra Cheese">Extra Cheese &#40&#43$3&#41			
+				</div>
+				<div class="menu">
+						<h2>Crust</h2>
+						<input type="radio" name="crust" value="Plain Crust">Plain Crust
+						<input type="radio" name="crust" value="Garlic Butter Crust">Garlic Butter Crust
+						<input type="radio" name="crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust &#40&#43$3&#41
+						<input type="radio" name="crust" value="Spicy Crust">Spicy Crust
+						<input type="radio" name="crust" value="House Special Crust">House Special Crust
+				</div>
+				<div class="menu">
+							<h2>Sauce</h2>
+							<input type="radio" name="sauce" value="Marinara Sauce">Marinara Sauce
+							<input type="radio" name="sauce" value="White Sauce">White Sauce
+							<input type="radio" name="sauce" value="BBQ Sauce">BBQ Sauce
+							<input type="radio" name="sauce" value="No Sauce">No Sauce
+				</div>
+				<div class="menu">
+						<h2>Veggies</h2>
+						<p>First veggie is complimentary; $1.00 extra charge for each additional veggie</p>
+						<input type="checkbox" name="veggies" value="Tomatoes">Tomatoes
+						<input type="checkbox" name="veggies" value="Onions">Onions
+						<input type="checkbox" name="veggies" value="Olives">Olives
+						<input type="checkbox" name="veggies" value="Peppers">Green Peppers
+						<input type="checkbox" name="veggies" value="Mushrooms">Mushrooms
+						<input type="checkbox" name="veggies" value="Pineapple">Pineapple
+						<input type="checkbox" name="veggies" value="Spinach">Spinach
+						<input type="checkbox" name="veggies" value="Jalapeno">Jalapeno
+				</div>
+				<div id="receiptButton">
+						<button type="button" onclick="getReceipt()">Get Receipt</button>
+				</div>
+			</form>
+		</div>
+		<script src="./JavaScript/PizzaMenu.js"></script>	
+	</body>
+</html>
